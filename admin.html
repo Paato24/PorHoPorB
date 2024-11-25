@@ -1,8 +1,0 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const role = localStorage.getItem("role");
-
-    if (!role || (window.location.href.includes("admin.html") && role !== "admin")) {
-        alert("Acceso denegado. Por favor, inicie sesión.");
-        window.location.href = "index.html"; // Redirigir al login
-    }
-});
